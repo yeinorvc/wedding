@@ -1,6 +1,7 @@
 body {
   font-size: 20px;
   color: #1a1a1a;
+  background: #FAF3EC; /* Fondo principal romántico */
 }
 
 h1,
@@ -15,29 +16,67 @@ h6,
   font-size: 42px;
   margin-bottom: 20px;
   letter-spacing: 1px;
+  color: #8C5E58; /* Marrón rosado elegante */
 }
 
 .wedding-names {
-  font-family: "Parisienne", cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 64px;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
+  color: #cbbbac; /* Dorado suave */
+}
+
+div{
+  font-family: "Merienda", cursive;
+  font-weight: normal;
+  font-size: 20px;
 }
 
 p,
-div,
 span {
   font-family: "Merienda", cursive;
   font-weight: normal;
   font-size: 20px;
+  /* color: #2b560d;  Marrón rosado elegante para texto */
+}
+
+.sunset-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.sunset-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 183, 94, 0.45) 0%,
+    rgba(255, 94, 98, 0.25) 60%,
+    rgba(255, 183, 94, 0.15) 100%
+  );
+  mix-blend-mode: screen;
+  z-index: 2;
+}
+
+.sunset-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85) contrast(1.1) saturate(1.2);
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 #musicButton {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #4caf50;
+  background: #C9A27E; /* Dorado suave */
   border: none;
   color: white;
   padding: 15px;
@@ -49,5 +88,13 @@ span {
 }
 
 #musicButton:hover {
-  background: #45a049;
+  background: #D5B8A0; /* Beige tostadito romántico */
+}
+
+/* Puedes agregar detalles decorativos usando los colores sugeridos */
+a {
+  color: #8C5E58;
+}
+a:hover {
+  color: #C9A27E;
 }
