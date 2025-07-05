@@ -1,6 +1,7 @@
 body {
   font-size: 20px;
   color: #1a1a1a;
+  background: #FFF8F4;
 }
 
 h1,
@@ -19,10 +20,11 @@ h6,
 
 .wedding-names {
   font-family: "Parisienne", cursive;
-  font-size: 64px;
+  font-size: 94px;
   font-weight: 200;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
+  color: #633306cc;
 }
 
 p,
@@ -51,3 +53,16 @@ span {
 #musicButton:hover {
   background: #45a049;
 }
+
+.flor-esquina {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.flor-esquina-1 { top: 0; left: 0; }
+.flor-esquina-2 { top: 0; right: 0; transform: scaleX(-1);}
+.flor-esquina-3 { bottom: 0; left: 0; transform: scaleY(-1);}
+.flor-esquina-4 { bottom: 0; right: 0; transform: scaleX(-1) scaleY(-1);}
